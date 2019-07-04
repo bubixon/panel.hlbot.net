@@ -18,6 +18,7 @@ class Home extends CI_Controller {
 
         $this->load->model('license_model');
         $this->load->model('buy_model');
+        $this->load->model('servers_model');
         $data['countServers'] = $this->buy_model->countServers();
         $data['countUsers'] = $this->buy_model->countUsers();
 

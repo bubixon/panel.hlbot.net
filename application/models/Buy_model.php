@@ -57,8 +57,12 @@ class Buy_model extends CI_Model {
         }
     }
 
-    /*public function countServers() {
-        return $this->db->
-    }*/
+    public function countServers() {
+        return $this->db->get('servers')->num_rows();
+    }
+
+    public function countUsers() {
+        return $this->db->get('user')->num_rows();
+    }
 
 }

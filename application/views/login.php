@@ -93,10 +93,10 @@
         });
     });
 </script>
-<script src="https://www.google.com/recaptcha/api.js?render=6LdWf6kUAAAAAN41Jum0W7vjWzjx3IeJTNysb3Aq"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lft_6sUAAAAAIGM3N420LfGc8sltO8sNI4VLIYL"></script>
 <script>
     grecaptcha.ready(function () {
-        grecaptcha.execute('6LdWf6kUAAAAAN41Jum0W7vjWzjx3IeJTNysb3Aq', { action: 'contact' }).then(function (token) {
+        grecaptcha.execute('6Lft_6sUAAAAAIGM3N420LfGc8sltO8sNI4VLIYL', { action: 'contact' }).then(function (token) {
             var recaptchaResponse = document.getElementById('recaptchaResponse');
             recaptchaResponse.value = token;
         });

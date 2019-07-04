@@ -25,7 +25,7 @@ class Account extends CI_Controller {
             $password = $this->input->post('password');
             $recaptcha_response = $this->input->post('recaptcha_response');
 
-            $recaptcha = @file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LdWf6kUAAAAAChfwMnrQZB_rjeVneg1HvoPk1pk&response=' . $recaptcha_response);
+            $recaptcha = @file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lft_6sUAAAAAJFtvHHl-Xt-VfCpG27fRY2AOR8e&response=' . $recaptcha_response);
             $recaptcha = json_decode($recaptcha);
             if (!$recaptcha->score >= 0.5) {
                 message('Błąd z recaptcha!', '/login');
@@ -86,7 +86,7 @@ class Account extends CI_Controller {
             $password = $this->input->post('password');
             $recaptcha_response = $this->input->post('recaptcha_response');
 
-            $recaptcha = @file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6LdWf6kUAAAAAChfwMnrQZB_rjeVneg1HvoPk1pk&response=' . $recaptcha_response);
+            $recaptcha = @file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=6Lft_6sUAAAAAJFtvHHl-Xt-VfCpG27fRY2AOR8e&response=' . $recaptcha_response);
             $recaptcha = json_decode($recaptcha);
             if (!$recaptcha->score >= 0.5) {
                 message('Błąd z recaptcha!', '/register');
