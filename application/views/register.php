@@ -51,7 +51,7 @@
 <!-- BEGIN PAGA BACKDROPS-->
 <div class="sidenav-backdrop backdrop"></div>
 <div class="preloader-backdrop">
-    <div class="page-preloader">Loading</div>
+    <div class="page-preloader">Ładowanie</div>
 </div>
 <!-- END PAGA BACKDROPS-->
 <!-- CORE PLUGINS -->

@@ -2347,7 +2347,7 @@ smaller than 560
   background-color: #c7cccf !important; }
 
 .bg-silver-300 {
-  background-color: #d1d5d8 !important; }
+  background-color: #2d353d !important; }
 
 .bg-silver-200 {
   background-color: #dee1e3 !important; }
@@ -2814,7 +2814,7 @@ a.text-danger:hover, a.text-danger:focus {
   display: flex;
   height: 56px;
   position: relative;
-  background-color: #fff;
+  background-color: #323b44;
   margin: 0;
   border: 0;
   -webkit-border-radius: 0;
@@ -3118,7 +3118,8 @@ body.fixed-layout.sidebar-mini .content-wrapper {
   -ms-flex-align: center;
   align-items: center;
   padding: 10px 15px;
-  background-color: #fff; }
+  background-color: #323b44;
+  color: white; }
 
 .page-wrapper {
   width: 100%;
@@ -3128,9 +3129,9 @@ body.fixed-layout.sidebar-mini .content-wrapper {
 
 .content-wrapper {
   position: relative;
-  background-color: #f7f7f7;
-  background-color: #f2f2f2;
-  background-color: #f1f1f1;
+  background-color: #2d353d;
+  background-color: #2d353d;
+  background-color: #2d353d;
   margin-left: 220px;
   padding: 0 15px 60px 15px;
   -webkit-transition: margin .2s ease-in-out;
@@ -3149,7 +3150,8 @@ body.fixed-layout.sidebar-mini .content-wrapper {
   padding: 0 5px; }
   .page-heading .page-title {
     font-size: 26px;
-    margin: 20px 0 10px 0; }
+    margin: 20px 0 10px 0;
+    color: white; }
   .page-heading .breadcrumb {
     padding: 0;
     margin: 0;
@@ -3358,7 +3360,7 @@ body.has-backdrop .backdrop {
       color: #fff; }
 
 .page-sidebar {
-  background-color: #253544; }
+  background-color: #323b44; }
   .page-sidebar .admin-block .admin-info {
     color: #fff; }
     .page-sidebar .admin-block .admin-info small {
@@ -3391,7 +3393,7 @@ body.has-backdrop .backdrop {
 
 .header .page-brand {
   color: #fff;
-  background-color: #374f65; }
+  background-color: #323b44; }
 
 .legendLabel {
   padding-left: 5px; }

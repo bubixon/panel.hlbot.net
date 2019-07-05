@@ -76,36 +76,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="ibox">
-                    <div class="ibox-body">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>Data</th>
-                                    <th>Status</th>
-                                    <th>Akcje</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <?php foreach ($pscs as $psc): ?>
-                                <tr>
-                                    <td><?php echo $psc['date']; ?></td>
-                                    <td><?php echo $psc['status']; ?></td>
-                                    <td>
-                                        <div class="btn-group m-b-10 btn-rounded">
-                                            <a href="<?php echo base_url('/buy/status/psc/' . $psc['id']); ?>" role="button" class="btn btn-success"><i class="fas fa-location-arrow" aria-hidden="true"></i> Otwórz</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <?php endforeach; ?>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <style>
             .visitors-table tbody tr td:last-child {

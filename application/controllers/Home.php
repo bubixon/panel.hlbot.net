@@ -40,12 +40,26 @@ class Home extends CI_Controller {
 
         $data['account'] = $this->account_model->getUserDataByEmail(getUser()['user_id']);
         $data['history'] = $this->account_model->getHistory(getUser()['user_id']);
-        $data['pscs'] = $this->buy_model->getAllPscUser(getUser()['user_id']);
 
         $this->load->view('req/head');
         $this->load->view('req/header');
         $this->load->view('req/menu');
         $this->load->view('profile', $data);
+        $this->load->view('req/footer');
+        $this->load->view('req/footerScripts');
+
+    }
+
+    public function transactions() {
+
+        $this->load->model('buy_model');
+
+        $data['pscs'] = $this->buy_model->getAllPscUser(getUser()['user_id']);
+
+        $this->load->view('req/head');
+        $this->load->view('req/header');
+        $this->load->view('req/menu');
+        $this->load->view('transactions', $data);
         $this->load->view('req/footer');
         $this->load->view('req/footerScripts');
 

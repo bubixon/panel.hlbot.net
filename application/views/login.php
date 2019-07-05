@@ -49,17 +49,18 @@
         <div class="form-group">
             <button class="btn btn-info btn-block" type="submit">Zaloguj</button>
             <?php echo form_close(); ?>
-        </div>
-        <div class="social-auth-hr">
-        </div>
-        <div class="text-center">Nie masz konta?
-            <a class="color-blue" href="<?php echo base_url('/register'); ?>">Stwórz je</a>
+
+            <div class="social-auth-hr mt-3">
+            </div>
+            <div class="text-center">Nie masz konta?
+                <a class="color-blue" href="<?php echo base_url('/register'); ?>">Stwórz je</a>
+            </div>
         </div>
 </div>
 <!-- BEGIN PAGA BACKDROPS-->
 <div class="sidenav-backdrop backdrop"></div>
 <div class="preloader-backdrop">
-    <div class="page-preloader">Loading</div>
+    <div class="page-preloader">Ładowanie</div>
 </div>
 <!-- END PAGA BACKDROPS-->
 <!-- CORE PLUGINS -->

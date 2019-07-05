@@ -20,6 +20,11 @@
                     <span class="nav-label">Profil</span>
                 </a>
             </li>
+            <li <?php echo $this->uri->segment(1) == "transactions" ? 'class="active"' : ''; ?>>
+                <a href="<?php echo base_url('/transactions'); ?>"><i class="sidebar-item-icon fas fa-clipboard-list"></i>
+                    <span class="nav-label">Twoje Transakcje</span>
+                </a>
+            </li>
             <li <?php echo $this->uri->segment(1) == "servers" ? 'class="active"' : ''; ?>>
                 <a href="<?php echo base_url('/servers'); ?>"><i class="sidebar-item-icon fas fa-server"></i>
                     <span class="nav-label">Lista Serwerów</span>

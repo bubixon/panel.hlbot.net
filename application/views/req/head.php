@@ -12,7 +12,7 @@
     <!-- PLUGINS STYLES-->
     <link href="<?php echo base_url('/assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css'); ?>" rel="stylesheet" />
     <!-- THEME STYLES-->
-    <link href="<?php echo base_url('/assets/css/main.min.css'); ?>" rel="stylesheet" />
+    <link href="<?php echo base_url('/assets/css/main.css'); ?>" rel="stylesheet" />
     <!-- PAGE LEVEL STYLES-->
 </head>
 <body class="fixed-navbar">
