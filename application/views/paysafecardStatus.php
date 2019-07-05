@@ -1,6 +1,9 @@
 <div class="content-wrapper">
     <div class="page-heading">
         <h1 class="page-title">Status</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Status płatności paysafecard</li>
+        </ol>
     </div>
     <!-- START PAGE CONTENT-->
     <div class="page-content fade-in-up">

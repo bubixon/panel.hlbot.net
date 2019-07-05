@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>HLBot.net | Login</title>
+    <title>Hlbot.net - Logowanie</title>
     <!-- GLOBAL MAINLY STYLES-->
     <link href="<?php echo base_url('/assets/vendors/bootstrap/dist/css/bootstrap.min.css'); ?>" rel="stylesheet" />
     <link href="<?php echo base_url('/assets/vendors/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" />
@@ -15,12 +15,13 @@
     <link href="<?php echo base_url('assets/css/main.css'); ?>" rel="stylesheet" />
     <!-- PAGE LEVEL STYLES-->
     <link href="<?php echo base_url('/assets/css/pages/auth-light.css'); ?>" rel="stylesheet" />
+    <link rel="icon" href="<?php echo base_url('/assets/img/favicon.ico'); ?>" type="image/x-icon"/>
 </head>
 
 <body class="bg-silver-300">
 <div class="content">
     <div class="brand">
-        <a class="link" href="index.html"><b>HL</b>bot</a>
+        <img width="70" src="<?php echo base_url('/assets/img/logo.png'); ?>"><a class="link text-white" href="#"><b>HLBOT</b></a>
     </div>
     <?php echo viewMessage(); ?>
     <?php echo form_open(base_url('/login'), array('id' => 'login_form')); ?>

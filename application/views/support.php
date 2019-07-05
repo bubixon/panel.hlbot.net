@@ -6,11 +6,11 @@
     <div class="page-content fade-in-up">
         <?php echo viewMessage(); ?>
         <div class="row">
-            <div class="col-md-12 mx-auto">
+            <div class="col-md-9 mx-auto">
                 <div class="ibox">
                     <div class="ibox-body">
                         <?php if ($page == "index") : ?>
-                        <a href="<?php echo base_url('/support/create'); ?>" role="button" class="btn btn-success">Stwórz</a>
+                            <a href="<?php echo base_url('/support/create'); ?>" role="button" class="btn btn-info btn-fix float-right mb-3 ml-3"><i class="fas fa-plus"></i> Stwórz Zgłoszenie</a>
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
@@ -28,9 +28,7 @@
                                     <td><?php echo date('H:i:s d/m/Y', strtotime($ticket['date'])); ?></td>
                                     <td><p class="text-<?php echo $ticket['admin'] == 0 ? 'danger' : 'success'; ?>"><?php echo $ticket['admin'] == 0 ? 'Czeka na odpowiedź supportu' : 'Odpowiedź została udzielona'; ?></p></td>
                                     <td>
-                                        <div class="btn-group m-b-10 btn-rounded">
-                                            <a href="<?php echo base_url('/support/view/' . $ticket['id']); ?>" role="button" class="btn btn-success"><i class="fas fa-location-arrow"></i> Zobacz</a>
-                                        </div>
+                                            <a href="<?php echo base_url('/support/view/' . $ticket['id']); ?>" role="button" class="btn btn-success btn-fix"><i class="fas fa-location-arrow"></i> Zobacz</a>
                                     </td>
                                 </tr>
                                 <?php endforeach; ?>
@@ -39,7 +37,7 @@
                         </div>
                         <?php elseif ($page == "create"): ?>
                             <div class="ibox-head">
-                                <div class="ibox-title">Aktywuj Klucz</div>
+                                <div class="ibox-title">Tworzenie Zgłoszenia</div>
                             </div>
                             <div class="ibox-body">
                                 <?php echo form_open(base_url('/support/create'), array('class' => 'form-horizontal')); ?>
@@ -50,14 +48,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Opis zgłoszenia</label>
+                                    <label class="col-sm-2 col-form-label">Treść zgłoszenia</label>
                                     <div class="col-sm-10">
-                                        <input class="form-control" type="text" name="desc" placeholder="Krótki tytuł zgłoszenia, np. Zmiana hwid">
+                                        <textarea class="form-control" type="text" name="desc" placeholder="Treść zgłoszenia..."></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-10 ml-sm-auto">
-                                        <button class="btn btn-info btn-block" type="submit">Stwórz zgłoszenie</button>
+                                        <button class="btn btn-info btn-block" type="submit"><i class="fas fa-location-arrow"></i> Stwórz zgłoszenie</button>
                                     </div>
                                 </div>
                                 <?php echo form_close(); ?>

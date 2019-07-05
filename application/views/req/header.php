@@ -3,10 +3,10 @@
     <header class="header">
         <div class="page-brand">
             <a class="link" href="<?php echo base_url(); ?>">
-                    <span class="brand"><b>HL</b>
-                        <span class="brand-tip">bot - Panel</span>
+                    <span class="brand">
+                        <img width="30" src="<?php echo base_url('/assets/img/logo.png'); ?>"> <b>Hlbot.net</b>
                     </span>
-                <span class="brand-mini">HL</span>
+                <span class="brand-mini"><img width="40" src="<?php echo base_url('/assets/img/logo.png'); ?>"></span>
             </a>
         </div>
         <div class="flexbox flex-1">

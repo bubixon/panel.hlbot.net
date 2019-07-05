@@ -9,7 +9,7 @@
     <div class="page-content fade-in-up">
         <?php echo viewMessage(); ?>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6 mx-auto">
                 <div class="ibox">
                     <div class="ibox-body">
                         <div class="table-responsive">
@@ -25,11 +25,28 @@
                                 <?php foreach ($pscs as $psc): ?>
                                     <tr>
                                         <td><?php echo $psc['date']; ?></td>
-                                        <td><?php echo $psc['status']; ?></td>
+                                        <td><?php
+
+                                            $status = $psc['status'];
+
+                                            switch ($status)
+                                            {
+                                                case 'new':
+                                                    echo '<p class="text-info">Oczekuje</p>';
+                                                    break;
+
+                                                case 'bad':
+                                                    echo '<p class="text-danger">Odrzucona</p>';
+                                                    break;
+
+                                                case 'ok':
+                                                    echo '<p class="text-success">Zrealizowana</p>';
+                                                    break;
+                                            }
+
+                                        ?></td>
                                         <td>
-                                            <div class="btn-group m-b-10 btn-rounded">
-                                                <a href="<?php echo base_url('/buy/status/psc/' . $psc['id']); ?>" role="button" class="btn btn-success"><i class="fas fa-location-arrow" aria-hidden="true"></i> Otwórz</a>
-                                            </div>
+                                                <a href="<?php echo base_url('/buy/status/psc/' . $psc['id']); ?>" role="button" class="btn btn-success"><i class="fas fa-location-arrow" aria-hidden="true"></i> Otwórz Transakcje</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

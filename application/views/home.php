@@ -6,16 +6,30 @@
             <div class="col-lg-3 col-md-6">
                 <div class="ibox bg-success color-white widget-stat">
                     <div class="ibox-body">
-                        <h2 class="m-b-5 font-strong">201</h2>
-                        <div class="m-b-5">Sprzedanych Licencji</div><i class="ti-shopping-cart widget-stat-icon"></i>
+                        <h2 class="m-b-5 font-strong"><?php
+                            $status = $getSettings['status'];
+
+                            switch ($status)
+                            {
+                                case 'true':
+                                    echo 'Działa';
+                                    $icon = 'ti-pulse';
+                                    break;
+                                case 'false':
+                                    echo 'Prace Techniczne';
+                                    $icon = 'ti-settings';
+                                    break;
+                            }
+                            ; ?></h2>
+                        <div class="m-b-5">Status HlBot'a</div><i class="<?php echo $icon . ' widget-stat-icon'; ?>"></i>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="ibox bg-info color-white widget-stat">
                     <div class="ibox-body">
-                        <h2 class="m-b-5 font-strong">3.0.1</h2>
-                        <div class="m-b-5">Wersja HLbota</div><i class="ti-bar-chart widget-stat-icon"></i>
+                        <h2 class="m-b-5 font-strong"><?php echo $getSettings['version']; ?></h2>
+                        <div class="m-b-5">Wersja HLbota</div><i class="ti-check widget-stat-icon"></i>
                     </div>
                 </div>
             </div>
@@ -23,7 +37,7 @@
                 <div class="ibox bg-warning color-white widget-stat">
                     <div class="ibox-body">
                         <h2 class="m-b-5 font-strong"><?php echo $countServers; ?></h2>
-                        <div class="m-b-5">Aktualnie Serwerów</div><i class="fa fa-money widget-stat-icon"></i>
+                        <div class="m-b-5">Aktualnie Serwerów</div><i class="ti-layout-column3 widget-stat-icon"></i>
                     </div>
                 </div>
             </div>
