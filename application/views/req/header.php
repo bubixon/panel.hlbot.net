@@ -3,7 +3,7 @@
     <header class="header">
         <div class="page-brand">
             <a class="link" href="<?php echo base_url(); ?>">
-                    <span class="brand">
+                    <span class="brand mt-2">
                         <img width="30" src="<?php echo base_url('/assets/img/logo.png'); ?>"> <b>Hlbot.net</b>
                     </span>
                 <span class="brand-mini"><img width="40" src="<?php echo base_url('/assets/img/logo.png'); ?>"></span>

@@ -10,5 +10,9 @@ class Setting_model extends CI_Model {
 
     }
 
+    public function getNews() {
+
+        return $this->db->limit(5)->order_by('id', 'DESC')->get('news')->result_array();
+    }
 
 }

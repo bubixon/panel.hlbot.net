@@ -58,30 +58,26 @@
                     </div>
                     <div class="ibox-body">
                         <ul class="media-list media-list-divider m-0">
-                            <li class="media">
+<!--                            <li class="media">
                                 <div class="media-body">
                                     <div class="media-heading">Poprawki Tamidia <small class="float-right text-muted">11 minut temu</small></div>
                                     <div class="font-13">Zaktualizowano multihacka na tamidie poprawiono inject i wydajność.</div>
                                 </div>
-                            </li>
-                            <li class="media">
-                                <div class="media-body">
-                                    <div class="media-heading">Nowa aplikacja <small class="float-right text-muted">1 godzinę temu</small></div>
-                                    <div class="font-13">W zakładce download można pobrać nową wersje multihacka.</div>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <div class="media-body">
-                                    <div class="media-heading">Płatności <small class="float-right text-muted">3 godziny temu</small></div>
-                                    <div class="font-13">Dzisiaj zostały dodane płatności paypalem zapraszamy.</div>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <div class="media-body">
-                                    <div class="media-heading">Poprawki <small class="float-right text-muted">7 godziny temu</small></div>
-                                    <div class="font-13">Poprawiono błędy związane z pickupem na wszystkich serwerach.</div>
-                                </div>
-                            </li>
+                            </li>-->
+                            <?php
+                            foreach ($getNews as $row) {
+
+                                ?>
+
+                                <li class="media">
+                                    <div class="media-body">
+                                        <div class="media-heading"><?php echo $row['title']; ?> <small class="float-right text-muted"><?php echo $row['date']; ?></small></div>
+                                        <div class="font-13"><?php echo $row['info']; ?></div>
+                                    </div>
+                                </li>
+                            <?php
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>

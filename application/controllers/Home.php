@@ -23,6 +23,7 @@ class Home extends CI_Controller {
         $data['countServers'] = $this->buy_model->countServers();
         $data['countUsers'] = $this->buy_model->countUsers();
         $data['getSettings'] = $this->setting_model->getSettings();
+        $data['getNews'] = $this->setting_model->getNews();
 
         $data['account'] = $this->account_model->getUserDataByEmail($this->session->email);
         $data['license'] = $this->license_model->getLicense($data['account']['license_id']);
